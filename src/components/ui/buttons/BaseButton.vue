@@ -1,6 +1,7 @@
 <template>
   <div class="button">
-    <img :src="require(`@/assets/icons/${icon}`)" alt="" />
+    <!-- <img :src="require(`@/assets/${icon}`)" alt="" /> -->
+    <img :src="icon" alt="" />
     {{ name }}
   </div>
 </template>
@@ -21,6 +22,10 @@ export default {
     icon: {
       type: String,
     },
+    paddingHorizonral: {
+      type: String,
+      default: "50px"
+    },
   },
 };
 </script>
@@ -29,7 +34,7 @@ export default {
 .button {
   display: flex;
   height: 60px;
-  padding: 0px 30px;
+  padding: 0px v-bind(paddingHorizonral);
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -38,26 +43,15 @@ export default {
   background: v-bind(bgColor);
   cursor: v-bind(cursor);
 }
-/* .button:hover {
-  animation: slide-scale 0.5s ease-in forwards;
-} */
+.button {
+  transition: transform 0.3s ease;
+}
 
+.button:hover {
+  transform: scale(0.9);
+}
 
 .button img {
   height: 20px;
-}
-
-@keyframes slide-scale {
-  0% {
-    transform: scale(1);
-  }
-
-  70% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1.3);
-  }
 }
 </style>

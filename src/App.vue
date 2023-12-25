@@ -28,7 +28,7 @@ export default {
   --button-color: #A259FF;
 }
 html {
-  font-family: Work Sans, Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', 'Helvetica', 'Arial', 'sans-serif';
   color: var(--text-color);
 }
 </style>

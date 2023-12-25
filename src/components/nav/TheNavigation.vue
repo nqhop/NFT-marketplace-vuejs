@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
     <div class="logo">
-      <img src="@/assets/icons/Storefront.svg" alt="" />
+      <!-- <img src="@/assets/icons/Storefront.svg" width="100px" fill="red" alt="" /> -->
+      <img :src="StorefrontImage" alt="">
       <p>NFT Marketplace</p>
     </div>
     <div class="navigateItem">
@@ -16,7 +17,7 @@
           <router-link to="#">Connect a wallet</router-link>
         </li>
         <li>
-          <base-button name="Sign up" icon="User.svg" />
+          <base-button name="Sign up" :icon="userImage" paddingHorizonral="30px"/>
         </li>
       </ul>
     </div>
@@ -26,8 +27,14 @@
 <script>
 import BaseButton from "../ui/buttons/BaseButton.vue";
 export default {
+  data(){
+    return{
+      StorefrontImage: require("../../assets/icons/Storefront.svg"),
+      userImage : require("../../assets/icons/User.svg")
+    }
+  },
   components: {
-    BaseButton,
+    BaseButton
   },
 };
 </script>
@@ -70,8 +77,5 @@ ul li a:hover {
   margin-left: 12px;
   line-height: 32px;
   font-size: 22px;
-}
-.logo path {
-    stroke: #f30ee4;
 }
 </style>
