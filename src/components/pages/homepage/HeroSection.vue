@@ -15,8 +15,14 @@
           <p class="quantity">240k+</p>
           <p class="desc">Total Sale</p>
         </div>
-        <div class="total-sale col-third">a</div>
-        <div class="total-sale col-third">a</div>
+        <div class="auctions col-third">
+          <p class="quantity">100k+</p>
+          <p class="desc">Auctions</p>
+        </div>
+        <div class="artists col-third">
+          <p class="quantity">240k+</p>
+          <p class="desc">Artists</p>
+        </div>
       </div>
     </div>
     <div class="hero-section-img col-half">q</div>
@@ -47,7 +53,7 @@ export default {
   gap: 30px;
   align-self: stretch;
 
-  background: var(--bg-dark);
+  background: #2b2e41;
 }
 .hero-section .title {
   /* font-family: 'Work Sans'; */
@@ -64,12 +70,6 @@ export default {
   line-height: 160%; /* 35.2px */
   text-transform: capitalize;
   margin-top: 20px;
-}
-.col-half {
-  width: 50%;
-}
-.col-third {
-  width: 33.33%;
 }
 
 .hero-section-text {
@@ -91,11 +91,18 @@ export default {
   display: flex;
 }
 .quantity-statics .quantity {
-  font-family: 'Space Mono';
+  /* font-family: 'Space Mono'; */
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 39.2px */
+  text-transform: capitalize;
+}
+.quantity-statics .desc {
+  font-size: 23.99px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.384px */
   text-transform: capitalize;
 }
 </style>

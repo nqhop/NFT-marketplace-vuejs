@@ -24,7 +24,23 @@ export default {
     },
     paddingHorizonral: {
       type: String,
-      default: "50px"
+      default: "50px",
+    },
+    btnHeight: {
+      type: String,
+      default: "60px",
+    },
+    btnWidth: {
+      type: String,
+      default: "revert-layer",
+    },
+  },
+  methods: {
+    border() {
+      if (this.bgColor != "transparent") {
+        return "";
+      }
+      return "2px solid #A259FF";
     },
   },
 };
@@ -33,11 +49,18 @@ export default {
 <style scoped>
 .button {
   display: flex;
-  height: 60px;
+  height: v-bind(btnHeight);
+  width: v-bind(btnWidth);
   padding: 0px v-bind(paddingHorizonral);
   justify-content: center;
   align-items: center;
   gap: 12px;
+  border: v-bind(border());
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
 
   border-radius: 20px;
   background: v-bind(bgColor);
@@ -48,7 +71,7 @@ export default {
 }
 
 .button:hover {
-  transform: scale(0.9);
+  transform: scale(0.93);
 }
 
 .button img {

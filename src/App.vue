@@ -25,10 +25,19 @@ export default {
   padding: 0;
   --bg-dark: #2b2b2b;
   --text-color: #fff;
-  --button-color: #A259FF;
+  --button-color: #a259ff;
 }
 html {
-  font-family: 'Work Sans', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "Work Sans", "Helvetica", "Arial", "sans-serif";
   color: var(--text-color);
+}
+.col-half {
+  width: 50%;
+}
+.col-third {
+  width: 33.33%;
+}
+.col-quarter {
+  width: 25%;
 }
 </style>
