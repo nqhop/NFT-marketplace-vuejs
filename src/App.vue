@@ -19,6 +19,7 @@ export default {
 </style>
 
 <style>
+@import "./assets/css/grid.css";
 * {
   box-sizing: border-box;
   margin: 0;

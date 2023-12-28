@@ -13,9 +13,29 @@
     </div>
 
     <div class="top-creator-list">
-        <div class="col-quarter top-creator-item">
-            <the-creator-vue/>
+      <div class="col-quarter top-creator-item">
+        <the-creator-vue />
+      </div>
+      <div class="col-quarter top-creator-item">
+        <the-creator-vue />
+      </div>
+
+      <!-- <div class="grid wide">
+        <div class="row">
+          <div class="col l-3 m-6 c-12">
+            <div class="creator-item"><the-creator-vue /></div>
+          </div>
+          <div class="col l-3 m-6 c-12">
+            <div class="creator-item"><the-creator-vue /></div>
+          </div>
+          <div class="col l-3 m-6 c-12">
+            <div class="creator-item"><the-creator-vue /></div>
+          </div>
+          <div class="col l-3 m-6 c-12">
+            <div class="creator-item"><the-creator-vue /></div>
+          </div>
         </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -23,7 +43,7 @@
 <script>
 import BaseButton from "@/components/ui/buttons/BaseButton.vue";
 import RocketLaunchPurple from "../../../assets/icons/RocketLaunchPurple.svg";
-import TheCreatorVue from '@/components/ui/creator/TheCreator.vue';
+import TheCreatorVue from "@/components/ui/creator/TheCreator.vue";
 export default {
   data() {
     return {
@@ -33,7 +53,7 @@ export default {
   },
   components: {
     BaseButton,
-    TheCreatorVue
+    TheCreatorVue,
   },
 };
 </script>
@@ -78,8 +98,8 @@ export default {
   stroke: black;
   fill: #f30ee4;
 }
-.top-creators .top-creator-item{
-    width: 240px;
-    height: 238px;
+.top-creators .top-creator-item {
+  width: 240px;
+  height: 238px;
 }
 </style>

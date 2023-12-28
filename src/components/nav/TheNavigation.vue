@@ -5,7 +5,7 @@
       <img :src="StorefrontImage" alt="">
       <p>NFT Marketplace</p>
     </div>
-    <div class="navigateItem">
+    <div class="navigateItem hide-on-nav">
       <ul>
         <li>
           <router-link to="#">Marketplace</router-link>
@@ -21,6 +21,9 @@
         </li>
       </ul>
     </div>
+    <div class="dropdown-nav show-on-dropdown-nav">
+      <img :src="listImage" alt="">
+    </div>
   </div>
 </template>
 
@@ -30,7 +33,8 @@ export default {
   data(){
     return{
       StorefrontImage: require("../../assets/icons/Storefront.svg"),
-      userImage : require("../../assets/icons/User.svg")
+      userImage : require("../../assets/icons/User.svg"),
+      listImage : require("../../assets/icons/List.svg")
     }
   },
   components: {
@@ -77,5 +81,17 @@ ul li a:hover {
   margin-left: 12px;
   line-height: 32px;
   font-size: 22px;
+}
+
+.dropdown-nav{
+  display: none;
+}
+@media (max-width: 1279px) {
+  .hide-on-nav{
+    display: none;
+  }
+  .show-on-dropdown-nav{
+    display: block;
+  }
 }
 </style>
