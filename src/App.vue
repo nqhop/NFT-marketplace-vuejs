@@ -20,6 +20,7 @@ export default {
 
 <style>
 @import "./assets/css/grid.css";
+@import "./assets//css/responsive.css";
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,9 +1,11 @@
 <template>
   <div class="homepage">
-    <demo-responsive-vue/>
+    <demo-responsive-vue />
     <hero-section class="homepage-item" />
     <trending-collection-vue />
     <top-creators />
+    <browse-categories />
+    <discover-more-n-f-ts/>
   </div>
 </template>
 
@@ -11,13 +13,17 @@
 import HeroSection from "./HeroSection.vue";
 import TrendingCollectionVue from "./TrendingCollection.vue";
 import TopCreators from "./TopCreators.vue";
-import demoResponsiveVue from './demoResponsive.vue';
+import demoResponsiveVue from "./demoResponsive.vue";
+import BrowseCategories from "./BrowseCategories.vue";
+import DiscoverMoreNFTs from "./DiscoverMoreNFTs.vue";
 export default {
   components: {
     HeroSection,
     TrendingCollectionVue,
     TopCreators,
-    demoResponsiveVue
+    demoResponsiveVue,
+    BrowseCategories,
+    DiscoverMoreNFTs,
   },
 };
 </script>

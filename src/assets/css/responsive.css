@@ -1,0 +1,64 @@
+.f-s-main-text {
+    font-size: 28px;
+}
+
+.f-s-main-desc {
+    font-size: 16px;
+}
+
+.f-s-main-text {
+    font-size: 28px;
+}
+
+.f-s-main-quantity {
+    font-size: 22px;
+}
+
+.f-s-main-quantity-desc {
+    font-size: 16px;
+}
+
+/* for 2 -> n section */
+.f-s-section-title {
+    font-size: 28px;
+}
+
+.f-s-section-desc {
+    font-size: 16px;
+}
+
+/* table */
+@media (min-width: 834px) {
+    .f-s-main-text {
+        font-size: 38px;
+    }
+}
+
+/* PC medium resolution > */
+@media (min-width: 1280px) {
+    .f-s-main-text {
+        font-size: 67px;
+    }
+
+    .f-s-main-desc {
+        font-size: 22px;
+    }
+
+    .f-s-main-quantity {
+        font-size: 28px;
+    }
+
+    .f-s-main-quantity-desc {
+        font-size: 24px;
+    }
+
+    /* for 2 -> n section */
+    .f-s-section-title {
+        font-size: 38px;
+    }
+
+    .f-s-section-desc {
+        font-size: 22px;
+    }
+
+}

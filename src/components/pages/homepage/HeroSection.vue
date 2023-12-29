@@ -1,33 +1,39 @@
 <template>
-    <div class="hero-section">
-        <div class="hero-section-text col-half">
-            <p class="title">Discover digital art & Collect NFTs</p>
-            <p class="desc">
-                NFT marketplace UI created with Anima for Figma. Collect, buy and sell
-                art from more than 20k NFT artists.
-            </p>
-            <div class="get-started-btn">
-                <base-button name="Get started" :icon="rocketImage" />
+    <div class="hero-section grid wide">
+        <div class="row">
+            <div class="col l-6 m-6 c-12 hero-section-info">
+                <p class="title f-s-main-text">Discover digital art & Collect NFTs</p>
+                <p class="desc f-s-main-desc">
+                    NFT marketplace UI created with Anima for Figma. Collect, buy and sell
+                    art from more than 20k NFT artists.
+                </p>
+                <div class="get-started-btn">
+                    <base-button name="Get started" :icon="rocketImage" />
+                </div>
+
+                <div class="quantity-statics">
+                    <div class="total-sale col-third">
+                        <p class="quantity f-s-main-quantity">240k+</p>
+                        <p class="desc f-s-main-quantity-desc">Total Sale</p>
+                    </div>
+                    <div class="auctions col-third">
+                        <p class="quantity f-s-main-quantity">100k+</p>
+                        <p class="desc f-s-main-quantity-desc">Auctions</p>
+                    </div>
+                    <div class="artists col-third">
+                        <p class="quantity f-s-main-quantity">240k+</p>
+                        <p class="desc f-s-main-quantity-desc">Artists</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="quantity-statics">
-                <div class="total-sale col-third">
-                    <p class="quantity">240k+</p>
-                    <p class="desc">Total Sale</p>
-                </div>
-                <div class="auctions col-third">
-                    <p class="quantity">100k+</p>
-                    <p class="desc">Auctions</p>
-                </div>
-                <div class="artists col-third">
-                    <p class="quantity">240k+</p>
-                    <p class="desc">Artists</p>
-                </div>
+            <div class="col l-6 m-6 c-12 hero-section-img">
+                <p>aaa</p>
             </div>
         </div>
-        <div class="hero-section-img col-half">q</div>
-        
-    </div>    
+    </div>
+
+
 </template>
 
 <script>
@@ -47,19 +53,16 @@ export default {
 <style scoped>
 .hero-section {
     margin: auto;
-    display: flex;
-    padding: 80px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    align-self: stretch;
-
     background: #2b2e41;
 }
 
+.hero-section-info{
+    background-color: #0c1a77;
+}
+
+
 .hero-section .title {
-    /* font-family: 'Work Sans'; */
-    font-size: 67px;
+    /* font-size: 67px; */
     font-style: normal;
     font-weight: 600;
     line-height: 110%;
@@ -80,7 +83,7 @@ export default {
 .hero-section-text {}
 
 .hero-section-img {
-    background: yellow;
+    background: rgb(185, 185, 164);
 }
 
 .get-started-btn {
@@ -99,7 +102,6 @@ export default {
 
 .quantity-statics .quantity {
     /* font-family: 'Space Mono'; */
-    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
@@ -108,7 +110,6 @@ export default {
 }
 
 .quantity-statics .desc {
-    font-size: 23.99px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;

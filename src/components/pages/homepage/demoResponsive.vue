@@ -2,10 +2,10 @@
     <div class="res-wrapper">
         <div class="grid wide">
             <div class="row">
-                <div class="col l-6">
+                <div class="col l-6 m-6 c-12">
                     <div class="item">a</div>
                 </div>
-                <div class="col l-6">
+                <div class="col l-6 m-6 c-12">
                     <div class="item">b</div>
                 </div>
             </div>
