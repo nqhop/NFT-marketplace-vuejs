@@ -1,5 +1,5 @@
 <template>
-  <div class="the-nft">
+  <div class="the-nft scale-transition">
     <img :src="nftImage" alt="" />
     <div class="the-nft-info">
       <div class="the-nft-name">Distant Galaxy</div>

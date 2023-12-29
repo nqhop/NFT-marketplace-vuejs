@@ -6,6 +6,8 @@
     <top-creators />
     <browse-categories />
     <discover-more-n-f-ts/>
+    <n-f-t-highlight/>
+    <how-it-works-vue/>
   </div>
 </template>
 
@@ -16,6 +18,8 @@ import TopCreators from "./TopCreators.vue";
 import demoResponsiveVue from "./demoResponsive.vue";
 import BrowseCategories from "./BrowseCategories.vue";
 import DiscoverMoreNFTs from "./DiscoverMoreNFTs.vue";
+import NFTHighlight from "./NFTHighlight.vue";
+import HowItWorksVue from './HowItWorks.vue';
 export default {
   components: {
     HeroSection,
@@ -24,6 +28,8 @@ export default {
     demoResponsiveVue,
     BrowseCategories,
     DiscoverMoreNFTs,
+    NFTHighlight,
+    HowItWorksVue
   },
 };
 </script>

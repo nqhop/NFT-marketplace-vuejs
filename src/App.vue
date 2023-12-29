@@ -14,13 +14,9 @@ export default {
 </script>
 
 <style>
-#app {
-}
-</style>
-
-<style>
 @import "./assets/css/grid.css";
 @import "./assets//css/responsive.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,17 +25,35 @@ export default {
   --text-color: #fff;
   --button-color: #a259ff;
 }
+
 html {
   font-family: "Work Sans", "Helvetica", "Arial", "sans-serif";
   color: var(--text-color);
+
+  --Background---Secondary: #3B3B3B;
+  --Background: #2B2B2B;
+  --caption-label-text: #858584;
+  --Text: #FFF;
 }
+
 .col-half {
   width: 50%;
 }
+
 .col-third {
   width: 33.33%;
 }
+
 .col-quarter {
   width: 25%;
+}
+
+.scale-transition {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.scale-transition:hover {
+  transform: scale(0.93);
 }
 </style>

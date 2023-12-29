@@ -2,11 +2,36 @@
   <div class="wrapper">
     <div class="logo">
       <!-- <img src="@/assets/icons/Storefront.svg" width="100px" fill="red" alt="" /> -->
-      <img :src="StorefrontImage" alt="">
+      <img :src="StorefrontImage" alt="" />
       <p>NFT Marketplace</p>
     </div>
+    <!-- nav PC -->
     <div class="navigateItem hide-on-nav">
       <ul>
+        <li class="scale-transition">
+          <router-link to="#">Marketplace</router-link>
+        </li>
+        <li class="scale-transition">
+          <router-link to="#">Rankings</router-link>
+        </li>
+        <li class="scale-transition">
+          <router-link to="#">Connect a wallet</router-link>
+        </li>
+        <li>
+          <base-button name="Sign up" :icon="userImage" paddingHorizonral="30px" />
+        </li>
+      </ul>
+    </div>
+    <label for="nav-mobile-input" class="dropdown-nav show-on-dropdown-nav">
+      <img :src="listImage" alt="" />
+    </label>
+    <input type="checkbox" name="" id="nav-mobile-input">
+    <label class="nav-overlay" for="nav-mobile-input"></label>
+    <div class="nav-mobile">
+      <label for="nav-mobile-input">
+        <img :src="XmarkColidIcon" alt="" />
+      </label>
+      <ul class="nav-mobile-list">
         <li>
           <router-link to="#">Marketplace</router-link>
         </li>
@@ -17,28 +42,34 @@
           <router-link to="#">Connect a wallet</router-link>
         </li>
         <li>
-          <base-button name="Sign up" :icon="userImage" paddingHorizonral="30px"/>
+          <router-link to="#">Sign up</router-link>
         </li>
+        <!-- <li>
+          <base-button
+            name="Sign up"
+            :icon="userImage"
+            paddingHorizonral="30px"
+          />
+        </li> -->
       </ul>
-    </div>
-    <div class="dropdown-nav show-on-dropdown-nav">
-      <img :src="listImage" alt="">
     </div>
   </div>
 </template>
 
 <script>
 import BaseButton from "../ui/buttons/BaseButton.vue";
+// import XmarkColidIcon from "../../assets/fontawesome/xmark-solid.svg";
 export default {
-  data(){
-    return{
+  data() {
+    return {
       StorefrontImage: require("../../assets/icons/Storefront.svg"),
-      userImage : require("../../assets/icons/User.svg"),
-      listImage : require("../../assets/icons/List.svg")
-    }
+      userImage: require("../../assets/icons/User.svg"),
+      listImage: require("../../assets/icons/List.svg"),
+      XmarkColidIcon: require("../../assets/fontawesome/xmark-solid.svg")
+    };
   },
   components: {
-    BaseButton
+    BaseButton,
   },
 };
 </script>
@@ -57,13 +88,16 @@ export default {
   font-weight: 600;
   line-height: 140%;
 }
+
 ul {
   list-style-type: none;
 }
+
 ul li {
   display: inline-block;
   margin: 0 20px;
 }
+
 ul li a {
   text-decoration: none;
   color: var(--text-color);
@@ -71,27 +105,92 @@ ul li a {
   font-style: normal;
   font-weight: 600;
 }
+
 ul li a:hover {
-  cursor: context-menu;
+  /* cursor: context-menu; */
+  cursor: pointer;
 }
+
 .logo {
   display: flex;
 }
+
 .logo p {
   margin-left: 12px;
   line-height: 32px;
   font-size: 22px;
 }
 
-.dropdown-nav{
+.dropdown-nav {
   display: none;
 }
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background: #383535;
+  padding: 50px 10px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav-mobile img {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem
+}
+
+.nav-mobile-list li {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+
+#nav-mobile-input {
+  display: none;
+}
+#nav-mobile-input:checked ~ .nav-overlay{
+  display: block;
+}
+#nav-mobile-input:checked ~ .nav-mobile {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
 @media (max-width: 1279px) {
-  .hide-on-nav{
+  .hide-on-nav {
     display: none;
   }
-  .show-on-dropdown-nav{
+
+  .show-on-dropdown-nav {
     display: block;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 </style>
