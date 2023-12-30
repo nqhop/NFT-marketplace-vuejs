@@ -1,11 +1,11 @@
 <template>
-    <div class="how-item scale-transition">
-        <img :src="howImage" alt="">
+    <div class="how-item scale-transition f-d">
+        <img class="size-of-image" :src="howImage" alt="">
         <div class="how-item-info">
-            <div class="how-item-info-title">
+            <div class="how-item-info-title f-s-main-desc">
                 {{ title }}
             </div>
-            <div class="how-item-info-desc">
+            <div class="how-item-info-desc f-s-component-desc">
                 {{ desc }}
             </div>
         </div>
@@ -21,25 +21,24 @@ export default {
 <style scoped>
 .how-item {
     max-width: 315px;
-    padding: 10px 30px 30px 30px;
+    /* padding: 10px 30px 30px 30px; */
+    padding: 20px;
     background-color: var(--Background---Secondary);
     border-radius: 20px;
+    display: flex;
+    margin-bottom: 20px;
 }
 
-.how-item img{
-    width: 100%;
-}
 .how-item-info-title {
-    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
     /* 30.8px */
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
 .how-item-info-desc {
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;

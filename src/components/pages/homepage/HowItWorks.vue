@@ -1,9 +1,9 @@
 <template>
     <div class="how-it-works">
-        <div class="how-it-works-title">
+        <div class="how-it-works-title f-s-section-title">
             How it works
         </div>
-        <div class="how-it-works-desc">
+        <div class="how-it-works-desc f-s-section-desc m-g-title-desc">
             Find out how to get started
         </div>
         <div class="grid wide">
@@ -50,7 +50,6 @@ export default {
 }
 
 .how-it-works-title {
-    font-size: 38px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
@@ -58,11 +57,9 @@ export default {
 }
 
 .how-it-works-desc {
-    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    /* 35.2px */
     text-transform: capitalize;
     margin-top: 10px;
 }

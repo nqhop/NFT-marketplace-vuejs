@@ -18,6 +18,14 @@
     font-size: 16px;
 }
 
+.m-g-title-desc {
+    margin-bottom: 40px;
+}
+
+/* .m-g-component-title-desc{
+    margin-bottom: 10px;
+} */
+
 /* for 2 -> n section */
 .f-s-section-title {
     font-size: 28px;
@@ -27,10 +35,27 @@
     font-size: 16px;
 }
 
+.f-s-component-desc {
+    font-size: 12px;
+}
+
+.size-of-image {
+    width: 100px;
+    height: 100px;
+}
+
 /* table */
 @media (min-width: 834px) {
     .f-s-main-text {
         font-size: 38px;
+    }
+
+    .f-d {
+        flex-direction: column;
+    }
+    .size-of-image {
+        width: 100%;
+        height: unset;
     }
 }
 
@@ -52,6 +77,10 @@
         font-size: 24px;
     }
 
+    .m-g-title-desc {
+        margin-bottom: 40px;
+    }
+
     /* for 2 -> n section */
     .f-s-section-title {
         font-size: 38px;
@@ -59,6 +88,10 @@
 
     .f-s-section-desc {
         font-size: 22px;
+    }
+
+    .f-s-component-desc {
+        font-size: 16px;
     }
 
 }
