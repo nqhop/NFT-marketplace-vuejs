@@ -44,6 +44,23 @@
     height: 100px;
 }
 
+.height-input-button {
+    height: 46px;
+}
+
+.astronaut {
+    width: 315px;
+    height: 255px;
+}
+
+.m-g-t-input-button {
+    margin-top: 16px;
+}
+
+.m-g-t-30 {
+    margin-top: 30px;
+}
+
 /* table */
 @media (min-width: 834px) {
     .f-s-main-text {
@@ -53,9 +70,24 @@
     .f-d {
         flex-direction: column;
     }
+
     .size-of-image {
         width: 100%;
         height: unset;
+    }
+
+    .p-d-40-30 {
+        padding: 40px 30px;
+    }
+
+    .astronaut {
+        width: 300px;
+        height: 328px;
+        padding-right: 30px;
+    }
+
+    .b-g-c-very-dark-gray {
+        background: #3b3b3b;
     }
 }
 
@@ -94,4 +126,28 @@
         font-size: 16px;
     }
 
+    .p-d-60 {
+        padding: 60px;
+    }
+
+    .astronaut {
+        width: 425px;
+        height: 310px;
+        padding-right: 80px;
+    }
+
+    .position-absolute-none {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
+
+    .height-input-button {
+        height: 60px;
+    }
+
+    .m-g-t-input-button {
+        margin-top: 0;
+    }
 }

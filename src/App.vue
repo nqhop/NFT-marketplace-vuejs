@@ -16,6 +16,8 @@ export default {
 <style>
 @import "./assets/css/grid.css";
 @import "./assets//css/responsive.css";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Work+Sans&display=swap");
+
 
 * {
   box-sizing: border-box;
@@ -30,10 +32,10 @@ html {
   font-family: "Work Sans", "Helvetica", "Arial", "sans-serif";
   color: var(--text-color);
 
-  --Background---Secondary: #3B3B3B;
-  --Background: #2B2B2B;
+  --Background---Secondary: #3b3b3b;
+  --Background: #2b2b2b;
   --caption-label-text: #858584;
-  --Text: #FFF;
+  --Text: #fff;
 }
 
 .col-half {

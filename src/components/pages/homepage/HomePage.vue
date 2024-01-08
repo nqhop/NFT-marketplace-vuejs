@@ -8,6 +8,7 @@
     <discover-more-n-f-ts/>
     <n-f-t-highlight/>
     <how-it-works-vue/>
+    <weekly-digest/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import BrowseCategories from "./BrowseCategories.vue";
 import DiscoverMoreNFTs from "./DiscoverMoreNFTs.vue";
 import NFTHighlight from "./NFTHighlight.vue";
 import HowItWorksVue from './HowItWorks.vue';
+import WeeklyDigest from "./WeeklyDigest.vue";
 export default {
   components: {
     HeroSection,
@@ -29,7 +31,8 @@ export default {
     BrowseCategories,
     DiscoverMoreNFTs,
     NFTHighlight,
-    HowItWorksVue
+    HowItWorksVue,
+    WeeklyDigest
   },
 };
 </script>

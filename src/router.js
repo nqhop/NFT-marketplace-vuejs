@@ -5,7 +5,7 @@ import CreateAccount from "./components/pages/createAccount/CreateAccount.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/homepage", component: HomePage },
+    { path: "/", component: HomePage },
     { path: "/create-account", component: CreateAccount },
   ],
 });
