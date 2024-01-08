@@ -41,6 +41,7 @@
       </div>
     </div>
   </div>
+  <!-- <p>{{ this.$store.getters.getWidthMonitorChanging }}</p> -->
 </template>
 
 <script>
@@ -56,35 +57,25 @@ export default {
       width: 0,
     };
   },
+  watch: {
+    widthMonitorChanging() {
+      console.log(this.widthMonitorChanging);
+    },
+  },
   components: {
     BaseButton,
     TheCreatorVue,
   },
   computed: {
     numberOfCreator() {
-      if (this.width >= 1280) {
+      let temWidth = this.$store.getters.getWidthMonitorChanging;
+      if (temWidth >= 1280) {
         return 12;
-      } else if (this.width >= 834) {
+      } else if (temWidth >= 834) {
         return 4;
       }
       return 5;
     },
-  },
-  methods: {
-    resizeHandler() {
-      this.height = window.innerHeight;
-      this.width = window.innerWidth;
-    },
-  },
-  mounted() {
-    this.height = window.innerHeight;
-    this.width = window.innerWidth;
-  },
-  created() {
-    window.addEventListener("resize", this.resizeHandler);
-  },
-  unmounted() {
-    window.removeEventListener("resize", this.resizeHandler);
   },
 };
 </script>
@@ -134,7 +125,7 @@ export default {
   .top-creators .top-creator-item {
     margin-bottom: 24px;
   }
-  .top-creators .desc{
+  .top-creators .desc {
     margin-bottom: 60px;
   }
 }

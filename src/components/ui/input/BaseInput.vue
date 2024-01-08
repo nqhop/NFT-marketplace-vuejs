@@ -1,34 +1,34 @@
 <template>
   <div class="wrap-base-input">
-    <input
-      class="base-input height-input-button"
-      type="text"
-      placeholder="Enter Your Email Address"
-    />
-    <div
-      class="base-button-on-the-right position-absolute-none m-g-t-input-button"
-    >
-      <base-button-vue
-        name="Subscribe"
-        :icon="envelopeSimpleIcon"
-        :btnHeight="height"
-      />
+    <input class="base-input height-input-button" type="text" :placeholder="placeholder" />
+    <div class="base-button-on-the-right position-absolute-none m-g-t-input-button">
+      <base-button-vue name="Subscribe" :icon="icon" :btnHeight="widthForBaseButton" />
     </div>
   </div>
 </template>
 
 <script>
-import envelopeSimpleIcon from "../../../assets/icons/EnvelopeSimple.svg";
 import BaseButtonVue from "../buttons/BaseButton.vue";
 export default {
+  props: {
+    placeholder: {
+      default: "Enter Your Email Address"
+    },
+    baseButtonText: { default: "Subscribe" },
+    icon: {}
+  },
   components: {
     BaseButtonVue,
   },
-  data() {
-    return {
-      envelopeSimpleIcon: envelopeSimpleIcon,
-      height: "46px",
-    };
+
+  computed: {
+    widthForBaseButton() {
+      let temWidth = this.$store.getters.getWidthMonitorChanging;
+      if (temWidth >= 1280) {
+        return "60px";
+      }
+      return "46px";
+    },
   },
 };
 </script>
@@ -37,6 +37,7 @@ export default {
 .wrap-base-input {
   position: relative;
 }
+
 .base-input {
   width: 100%;
   padding: 16px 20px;
@@ -61,6 +62,7 @@ export default {
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
 }
+
 .base-button-on-the-right {
   /* position: absolute;
     top: 0;

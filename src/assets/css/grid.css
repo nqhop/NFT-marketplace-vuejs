@@ -5,7 +5,7 @@
 }
 
 .grid.wide {
-    max-width: 1280px;
+    max-width: 315px;
     margin: 0 auto;
 }
 
@@ -141,6 +141,9 @@
 
 /* table */
 @media (min-width: 834px) {
+    .grid.wide {
+        max-width: 690px;
+    }
     .row {
         margin-left: -8px;
         margin-right: -8px;
@@ -277,6 +280,9 @@
 
 /* PC medium resolution > */
 @media (min-width: 1280px) {
+    .grid.wide {
+        max-width: 1050px;
+    }
     .row {
         margin-left: -12px;
         margin-right: -12px;

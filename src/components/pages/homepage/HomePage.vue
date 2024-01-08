@@ -41,7 +41,7 @@ export default {
 .homepage {
   display: flex;
   flex-direction: column;
-  background: var(--bg-dark);
+  /* background: var(--bg-dark); */
 }
 
 /* 1280

@@ -61,6 +61,10 @@
     margin-top: 30px;
 }
 
+.m-t-divider{
+    margin-top: 30px;
+}
+
 /* table */
 @media (min-width: 834px) {
     .f-s-main-text {
@@ -88,6 +92,12 @@
 
     .b-g-c-very-dark-gray {
         background: #3b3b3b;
+    }
+    .m-b-80{
+        margin-bottom: 80px !important;
+    }
+    .m-t-divider{
+        margin-top: 50px;
     }
 }
 
