@@ -56,6 +56,7 @@ export default {
   --bg-dark: #2b2b2b;
   --text-color: #fff;
   --button-color: #a259ff;
+  --main-color: #a259ff;
 }
 
 html {
@@ -67,6 +68,7 @@ html {
   --caption-label-text: #858584;
   --Text: #fff;
 }
+
 .app {
   background: var(--bg-dark);
 }
