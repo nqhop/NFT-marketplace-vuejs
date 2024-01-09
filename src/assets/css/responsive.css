@@ -21,6 +21,10 @@
 .m-g-title-desc {
     margin-bottom: 40px;
 }
+.m-g-t-b-for-4-6-8{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 /* .m-g-component-title-desc{
     margin-bottom: 10px;
@@ -99,6 +103,10 @@
     .m-t-divider{
         margin-top: 50px;
     }
+    .m-g-t-b-for-4-6-8{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 /* PC medium resolution > */
@@ -159,5 +167,9 @@
 
     .m-g-t-input-button {
         margin-top: 0;
+    }
+    .m-g-t-b-for-4-6-8{
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 }
