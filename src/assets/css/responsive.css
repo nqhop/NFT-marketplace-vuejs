@@ -68,6 +68,13 @@
 .m-t-divider{
     margin-top: 30px;
 }
+.f-s-16-22{
+    font-size: 16px;
+}
+
+.d-none-unset{
+    display: none;
+}
 
 /* table */
 @media (min-width: 834px) {
@@ -106,6 +113,12 @@
     .m-g-t-b-for-4-6-8{
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+    .f-s-16-22{
+        font-size: 22px;
+    }
+    .d-none-unset{
+        display: unset;
     }
 }
 
