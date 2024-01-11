@@ -1,18 +1,19 @@
 <template>
-  ndtList
-  <!-- <div class="grid wide">
+  <div class="grid wide">
     <div class="row">
       <div class="col l-4 m-4 c-12" v-for="index in 12" :key="index">
-        <the-nft-vue />
+        <div class="m-b-card">
+          <the-nft-vue />
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
-  <ul>
+  <!-- <ul>
     <li v-for="index in 12" :key="index">
       <the-nft-vue />
     </li>
-  </ul>
+  </ul> -->
 
   <div class="paginate">
     <VueAwesomePaginate

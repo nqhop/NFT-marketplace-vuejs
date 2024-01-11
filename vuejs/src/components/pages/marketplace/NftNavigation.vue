@@ -1,6 +1,6 @@
 <template>
     <div class="nft-nav-divider"></div>
-    <div class="nft-nav">
+    <div class="nft-nav m-b-4-6">
         <ul>
             <li @click="changeNftsIsSelectedTrue">
                 <div class="scale-transition">

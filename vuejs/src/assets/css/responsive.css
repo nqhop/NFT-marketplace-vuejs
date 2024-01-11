@@ -76,6 +76,14 @@
     display: none;
 }
 
+.m-b-card{
+    margin-bottom: 30px;
+}
+
+.m-b-4-6{
+    margin-bottom: 40px;
+}
+
 /* table */
 @media (min-width: 834px) {
     .f-s-main-text {
@@ -119,6 +127,9 @@
     }
     .d-none-unset{
         display: unset;
+    }
+    .m-b-4-6{
+        margin-bottom: 60px;
     }
 }
 
@@ -184,5 +195,8 @@
     .m-g-t-b-for-4-6-8{
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .m-b-card{
+        margin-bottom: 30px;
     }
 }

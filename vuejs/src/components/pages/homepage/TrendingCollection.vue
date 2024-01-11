@@ -4,24 +4,25 @@
     <p class="desc">Checkout our weekly updated trending collection.</p>
     <div class="tredding-items">
       <div class="col-third tredding-item">
-        <trending-item :mainImage="PrimaryPhotoPlaceholder" trendingName="DSGN Animals"/>
+        <collection-item :mainImage="PrimaryPhotoPlaceholder" trendingName="DSGN Animals"/>
       </div>
 
       <div class="col-third tredding-item">
-        <trending-item :mainImage="PrimaryPhotoPlaceholder" />
+        <collection-item :mainImage="PrimaryPhotoPlaceholder" />
       </div>
 
       <div class="col-third tredding-item">
-        <trending-item :mainImage="PrimaryPhotoPlaceholder" />
+        <collection-item :mainImage="PrimaryPhotoPlaceholder" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import TrendingItem from "@/components/ui/trending/TrendingItem.vue";
+// import TrendingItem from "@/components/ui/trending/TrendingItem.vue";
+import CollectionItem from "@/components/ui/collection/CollectionItem.vue";
 export default {
-  components: { TrendingItem },
+  components: { CollectionItem },
   data() {
     return {
       PrimaryPhotoPlaceholders: require("../../../assets/trendings/PrimaryPhotoPlaceholder.png"),
