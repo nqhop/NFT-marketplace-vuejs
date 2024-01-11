@@ -12,19 +12,27 @@ exports.createNewNft = (req, res) => {
     });
   }
 
-  // Create a Tutorial
-  const nft = new Nft({
-    title: req.body.title,
-    description: req.body.description,
-  });
+  const title = req.body.title;
+  const description = req.body.description;
 
-  // Save nft in the database
-  Nft.create(nft, (err, data) => {
-    if (err)
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while creating the Tutorial.",
-      });
-    else res.send(data);
-  });
+  console.log("my nft------");
+  console.log("title: " + title + ", description: " + description);
+  
+  const nft = new Nft(null, req.body.title, req.body.description);
+  console.log(nft);
+  nft
+    .save()
+    .then(() => {
+      res.redirect("/");
+    })
+    .catch((err) => console.log(err));
+
+  // Nft.create(nft, (err, data) => {
+  //   if (err)
+  //     res.status(500).send({
+  //       message:
+  //         err.message || "Some error occurred while creating the Tutorial.",
+  //     });
+  //   else res.send(data);
+  // });
 };
