@@ -31,7 +31,10 @@ const Nft = sequelize.define("nft", {
     allowNull: false,
     primaryKey: true,
   },
-  title: Sequelize.STRING,
+  title: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   description: {
     type: Sequelize.STRING,
     allowNull: false,

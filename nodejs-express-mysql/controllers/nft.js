@@ -14,25 +14,19 @@ exports.createNewNft = (req, res) => {
 
   const title = req.body.title;
   const description = req.body.description;
+  // console.log("title: " + title + ", description: " + description);
 
-  console.log("my nft------");
-  console.log("title: " + title + ", description: " + description);
-  
-  const nft = new Nft(null, req.body.title, req.body.description);
-  console.log(nft);
-  nft
-    .save()
-    .then(() => {
-      res.redirect("/");
-    })
-    .catch((err) => console.log(err));
+  // const nft = new Nft(null, title, description);
+  // console.log(nft);
+  // nft
+  //   .save()
+  //   .then(() => {
+  //     res.redirect("/");
+  //   })
+  //   .catch((err) => console.log(err));
 
-  // Nft.create(nft, (err, data) => {
-  //   if (err)
-  //     res.status(500).send({
-  //       message:
-  //         err.message || "Some error occurred while creating the Tutorial.",
-  //     });
-  //   else res.send(data);
-  // });
+  Nft.create({
+    title: title,
+    description: description,
+  }).then();
 };
